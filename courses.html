@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses After 12th - After12</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        After<span>12</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+
+        <a class="active" href="courses.html">
+            Courses
+        </a>
+
+        <a href="careers.html">
+            Careers
+        </a>
+
+        <a href="colleges.html">
+            Colleges
+        </a>
+
+        <a href="exams.html">
+            Exams
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html" class="nav-contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="page-hero">
+
+    <span class="eyebrow">
+        📚 COURSE EXPLORER
+    </span>
+
+    <h1>
+        Courses After 12th
+    </h1>
+
+    <p>
+        Explore undergraduate, professional, diploma and
+        skill-based courses according to your interests
+        and Class 12 stream.
+    </p>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="section">
+
+    <div class="course-search-box">
+
+        <h2>
+            Find Your Course
+        </h2>
+
+        <p>
+            Search by course name, career or stream.
+        </p>
+
+        <div class="search-area">
+
+            <input
+                type="search"
+                id="courseSearch"
+                placeholder="🔍 Search B.Tech, BCA, B.Com, MBBS..."
+                autocomplete="off"
+            >
+
+            <select id="streamFilter">
+
+                <option value="all">
+                    All Streams
+                </option>
+
+                <option value="Science">
+                    Science
+                </option>
+
+                <option value="Commerce">
+                    Commerce
+                </option>
+
+                <option value="Arts">
+                    Arts / Humanities
+                </option>
+
+                <option value="Vocational">
+                    Vocational
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEARCH SUGGESTIONS -->
+
+    <div id="searchSuggestions"
+         class="search-suggestions">
+    </div>
+
+
+    <!-- COURSE GRID -->
+
+    <div id="courseGrid"
+         class="card-grid course-result-grid">
+    </div>
+
+</section>
+
+
+<!-- ================= POPULAR COURSES ================= -->
+
+<section class="section soft">
+
+    <div class="section-heading">
+
+        <span>
+            POPULAR OPTIONS
+        </span>
+
+        <h2>
+            Explore courses by stream
+        </h2>
+
+        <p>
+            Choose a stream to quickly discover
+            relevant study options.
+        </p>
+
+    </div>
+
+
+    <div class="stream-grid">
+
+        <a href="courses.html?stream=science"
+           class="stream-card">
+
+            <span>🔬</span>
+
+            <h3>
+                Science
+            </h3>
+
+            <p>
+                B.Tech, BCA, B.Sc, MBBS and
+                many other options.
+            </p>
+
+            <b>
+                Explore Science →
+            </b>
+
+        </a>
+
+
+        <a href="courses.html?stream=commerce"
+           class="stream-card">
+
+            <span>📊</span>
+
+            <h3>
+                Commerce
+            </h3>
+
+            <p>
+                B.Com, BBA, CA, Finance,
+                Banking and Management.
+            </p>
+
+            <b>
+                Explore Commerce →
+            </b>
+
+        </a>
+
+
+        <a href="courses.html?stream=arts"
+           class="stream-card">
+
+            <span>🎨</span>
+
+            <h3>
+                Arts / Humanities
+            </h3>
+
+            <p>
+                BA, Law, Journalism, Psychology,
+                Design and more.
+            </p>
+
+            <b>
+                Explore Arts →
+            </b>
+
+        </a>
+
+
+        <a href="courses.html?stream=vocational"
+           class="stream-card">
+
+            <span>🛠️</span>
+
+            <h3>
+                Vocational
+            </h3>
+
+            <p>
+                Diploma, IT skills, design,
+                technical and practical programs.
+            </p>
+
+            <b>
+                Explore Vocational →
+            </b>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW TO CHOOSE ================= -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <span>
+            SMART CHOICE
+        </span>
+
+        <h2>
+            How should you choose a course?
+        </h2>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <div>
+
+            <b>
+                🎯 Interest
+            </b>
+
+            <p>
+                Choose subjects and work areas
+                that genuinely interest you.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <b>
+                🧠 Strength
+            </b>
+
+            <p>
+                Consider your academic strengths
+                and learning style.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <b>
+                💰 Budget
+            </b>
+
+            <p>
+                Compare tuition, hostel,
+                transport and other expenses.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <b>
+                🚀 Career
+            </b>
+
+            <p>
+                Check what career and higher-study
+                options the course can lead to.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <span class="eyebrow">
+        STILL CONFUSED?
+    </span>
+
+    <h2>
+        Explore careers before choosing a course.
+    </h2>
+
+    <p>
+        Understand possible career paths and required skills.
+    </p>
+
+    <a href="careers.html"
+       class="btn white">
+
+        Explore Careers →
+
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+
+        <a href="index.html"
+           class="logo">
+
+            After<span>12</span>
+
+        </a>
+
+        <p>
+            Helping students make confident decisions
+            after Class 12.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h4>
+            Explore
+        </h4>
+
+        <a href="courses.html">
+            Courses
+        </a>
+
+        <a href="careers.html">
+            Careers
+        </a>
+
+        <a href="colleges.html">
+            Colleges
+        </a>
+
+        <a href="exams.html">
+            Exams
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h4>
+            Popular Courses
+        </h4>
+
+        <a href="btech.html">
+            B.Tech
+        </a>
+
+        <a href="bca.html">
+            BCA
+        </a>
+
+        <a href="bcom.html">
+            B.Com
+        </a>
+
+        <a href="bba.html">
+            BBA
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h4>
+            Company
+        </h4>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+    © 2026 After12 Education Guide
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/courses.js"></script>
+
+</body>
+
+</html>

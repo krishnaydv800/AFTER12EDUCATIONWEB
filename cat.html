@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CAT - After12 Education Guide</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f9fc;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+
+        header {
+            background: #ffffff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            font-weight: 600;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 80px 7%;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+
+        /* CONTAINER */
+
+        .container {
+            width: 86%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        .section h3 {
+            font-size: 23px;
+            margin: 25px 0 10px;
+            color: #333;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+
+        /* QUICK INFO */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: -35px;
+            position: relative;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .info-card h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+
+
+        /* LIST */
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+
+        /* BOX */
+
+        .box {
+            background: white;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+
+        /* TABLE */
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+        }
+
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 7px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+
+        /* BACK */
+
+        .back {
+            text-align: center;
+            margin: 30px 0 60px;
+        }
+
+        .back a {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #111827;
+            color: white;
+            padding: 40px 7%;
+            text-align: center;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            background: #0b1120;
+            color: #aaa;
+            text-align: center;
+            padding: 15px;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                margin-top: 20px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo">
+        After12
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="careers.html">Careers</a>
+        <a href="colleges.html">Colleges</a>
+        <a href="exams.html">Exams</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>CAT</h1>
+
+    <h2>Common Admission Test</h2>
+
+    <p>
+        A major management entrance examination used for
+        admission to MBA and other postgraduate management
+        programmes in participating institutes.
+    </p>
+
+</section>
+
+
+
+<!-- QUICK INFO -->
+
+<div class="container">
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>Exam</h3>
+            <p>CAT</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Field</h3>
+            <p>Management</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Level</h3>
+            <p>National</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Purpose</h3>
+            <p>MBA Admissions</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- WHAT IS CAT -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>What is CAT?</h2>
+
+    <p>
+        CAT stands for Common Admission Test. It is a national
+        level management entrance examination conducted for
+        admission to postgraduate management programmes.
+    </p>
+
+    <p>
+        CAT scores are used by the Indian Institutes of Management
+        (IIMs) and several other business schools as part of their
+        admission process.
+    </p>
+
+    <p>
+        The examination mainly tests a student's quantitative
+        ability, verbal ability, reading comprehension and
+        logical reasoning skills.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY CAT -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Why Should You Take CAT?</h2>
+
+    <div class="box">
+
+        <ul>
+
+            <li>Admission opportunity in IIMs.</li>
+
+            <li>Access to many reputed management institutes.</li>
+
+            <li>Strong career opportunities after MBA.</li>
+
+            <li>Development of analytical and problem-solving skills.</li>
+
+            <li>Opportunities in finance, marketing, consulting and technology management.</li>
+
+            <li>Useful qualification for students interested in business and management.</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ELIGIBILITY -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>CAT Eligibility</h2>
+
+    <p>
+        Candidates should always check the latest official CAT
+        notification because eligibility requirements can change.
+    </p>
+
+    <h3>Educational Qualification</h3>
+
+    <ul>
+
+        <li>
+            Candidates generally need a bachelor's degree from
+            a recognized university or institution.
+        </li>
+
+        <li>
+            Students appearing in the final year of their
+            bachelor's degree may also be eligible according
+            to the current notification.
+        </li>
+
+        <li>
+            Minimum marks/category requirements should be checked
+            in the latest official notification.
+        </li>
+
+    </ul>
+
+    <h3>Important</h3>
+
+    <p>
+        Completing Class 12 alone is generally not enough for
+        CAT. CAT is primarily a postgraduate management
+        entrance examination.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- EXAM STRUCTURE -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>CAT Exam Structure</h2>
+
+    <p>
+        CAT is divided into different sections that test
+        mathematical ability, reasoning, English language skills
+        and reading comprehension.
+    </p>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <tr>
+                <th>Section</th>
+                <th>Main Focus</th>
+            </tr>
+
+            <tr>
+                <td>VARC</td>
+                <td>Verbal Ability & Reading Comprehension</td>
+            </tr>
+
+            <tr>
+                <td>DILR</td>
+                <td>Data Interpretation & Logical Reasoning</td>
+            </tr>
+
+            <tr>
+                <td>QA</td>
+                <td>Quantitative Ability</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <p>
+        The exact number of questions, duration, marking scheme
+        and other details should be checked from the latest
+        official CAT notification.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- SYLLABUS -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>CAT Syllabus</h2>
+
+
+    <div class="box">
+
+        <h3>1. Verbal Ability & Reading Comprehension</h3>
+
+        <ul>
+
+            <li>Reading Comprehension</li>
+
+            <li>Para Jumbles</li>
+
+            <li>Para Summary</li>
+
+            <li>Odd Sentence</li>
+
+            <li>Sentence Completion</li>
+
+            <li>Vocabulary</li>
+
+            <li>Grammar and language usage</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="box">
+
+        <h3>2. Data Interpretation & Logical Reasoning</h3>
+
+        <ul>
+
+            <li>Tables</li>
+
+            <li>Graphs</li>
+
+            <li>Charts</li>
+
+            <li>Caselets</li>
+
+            <li>Data comparison</li>
+
+            <li>Arrangements</li>
+
+            <li>Distribution problems</li>
+
+            <li>Logical puzzles</li>
+
+            <li>Sets and networks</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="box">
+
+        <h3>3. Quantitative Ability</h3>
+
+        <ul>
+
+            <li>Arithmetic</li>
+
+            <li>Algebra</li>
+
+            <li>Geometry</li>
+
+            <li>Number System</li>
+
+            <li>Percentages</li>
+
+            <li>Profit and Loss</li>
+
+            <li>Ratio and Proportion</li>
+
+            <li>Time, Speed and Distance</li>
+
+            <li>Time and Work</li>
+
+            <li>Permutation and Combination</li>
+
+            <li>Probability</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- APPLICATION -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>CAT Application Process</h2>
+
+    <div class="box">
+
+        <h3>Step 1 — Registration</h3>
+
+        <p>
+            Visit the official CAT website and create your
+            registration account.
+        </p>
+
+        <h3>Step 2 — Fill Application Form</h3>
+
+        <p>
+            Enter your personal, academic and other required
+            information carefully.
+        </p>
+
+        <h3>Step 3 — Select Preferences</h3>
+
+        <p>
+            Enter the required test city and other preferences
+            according to the current application form.
+        </p>
+
+        <h3>Step 4 — Upload Documents</h3>
+
+        <p>
+            Upload the required photograph, signature and other
+            documents according to the official instructions.
+        </p>
+
+        <h3>Step 5 — Pay Application Fee</h3>
+
+        <p>
+            Pay the applicable examination fee through the
+            available online payment methods.
+        </p>
+
+        <h3>Step 6 — Submit Form</h3>
+
+        <p>
+            Check every detail carefully before final submission.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- PREPARATION -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>How to Prepare for CAT?</h2>
+
+    <h3>1. Understand the Syllabus</h3>
+
+    <p>
+        First understand the three major sections and identify
+        your strong and weak areas.
+    </p>
+
+
+    <h3>2. Build Basic Concepts</h3>
+
+    <p>
+        Focus on arithmetic, algebra, reading comprehension,
+        grammar, reasoning and data interpretation fundamentals.
+    </p>
+
+
+    <h3>3. Practice Questions</h3>
+
+    <p>
+        Solve questions regularly and analyse your mistakes.
+        Simply solving many questions without analysing errors
+        is not enough.
+    </p>
+
+
+    <h3>4. Improve Speed</h3>
+
+    <p>
+        CAT requires effective time management. Learn when to
+        attempt a question and when to skip it.
+    </p>
+
+
+    <h3>5. Take Mock Tests</h3>
+
+    <p>
+        Mock tests help you understand your preparation level,
+        improve time management and develop exam strategy.
+    </p>
+
+
+    <h3>6. Analyse Every Mock</h3>
+
+    <p>
+        After every mock test, check incorrect questions,
+        unattempted questions and questions where too much time
+        was spent.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- DAILY PLAN -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Daily CAT Study Plan</h2>
+
+    <div class="table-wrapper">
+
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+
+            <tr>
+                <td>1 Hour</td>
+                <td>Quantitative Ability</td>
+            </tr>
+
+            <tr>
+                <td>1 Hour</td>
+                <td>Reading Comprehension & Verbal Ability</td>
+            </tr>
+
+            <tr>
+                <td>1 Hour</td>
+                <td>Logical Reasoning & Data Interpretation</td>
+            </tr>
+
+            <tr>
+                <td>30 Minutes</td>
+                <td>Revision</td>
+            </tr>
+
+            <tr>
+                <td>30 Minutes</td>
+                <td>Previous Questions / Mock Analysis</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- AFTER CAT -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>What Happens After CAT?</h2>
+
+    <p>
+        After the CAT examination, institutes may use CAT scores
+        along with other selection components.
+    </p>
+
+    <div class="box">
+
+        <h3>Common Selection Components</h3>
+
+        <ul>
+
+            <li>CAT Score / Percentile</li>
+
+            <li>Academic Performance</li>
+
+            <li>Work Experience, where applicable</li>
+
+            <li>Written Assessment, where applicable</li>
+
+            <li>Personal Interview</li>
+
+            <li>Other institute-specific criteria</li>
+
+        </ul>
+
+    </div>
+
+    <p>
+        Every institute can have its own admission policy, so
+        students should check the official admission information
+        of each institute.
+    </p>
+
+</div>
+
+</section>
+
+
+
+<!-- MBA SPECIALIZATIONS -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Popular MBA Specializations</h2>
+
+    <div class="box">
+
+        <ul>
+
+            <li>Finance</li>
+
+            <li>Marketing</li>
+
+            <li>Human Resources</li>
+
+            <li>Business Analytics</li>
+
+            <li>Operations Management</li>
+
+            <li>Information Technology</li>
+
+            <li>International Business</li>
+
+            <li>Entrepreneurship</li>
+
+            <li>Supply Chain Management</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- CAREER -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Career Opportunities After MBA</h2>
+
+    <p>
+        An MBA can lead to careers across different business
+        functions depending on the specialization, skills and
+        experience of the student.
+    </p>
+
+    <div class="box">
+
+        <ul>
+
+            <li>Business Analyst</li>
+
+            <li>Marketing Manager</li>
+
+            <li>Financial Analyst</li>
+
+            <li>HR Manager</li>
+
+            <li>Product Manager</li>
+
+            <li>Operations Manager</li>
+
+            <li>Management Consultant</li>
+
+            <li>Business Development Manager</li>
+
+            <li>Entrepreneur</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- COMMON MISTAKES -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Common CAT Preparation Mistakes</h2>
+
+    <div class="box">
+
+        <ul>
+
+            <li>Starting preparation without understanding the syllabus.</li>
+
+            <li>Ignoring Reading Comprehension practice.</li>
+
+            <li>Only focusing on Quantitative Ability.</li>
+
+            <li>Not practising DILR regularly.</li>
+
+            <li>Taking mocks without analysing them.</li>
+
+            <li>Spending too much time on one difficult question.</li>
+
+            <li>Ignoring revision.</li>
+
+            <li>Following too many resources at the same time.</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- FAQ -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Frequently Asked Questions</h2>
+
+
+    <div class="box">
+
+        <h3>Q1. What does CAT stand for?</h3>
+
+        <p>
+            CAT stands for Common Admission Test.
+        </p>
+
+
+        <h3>Q2. Is CAT an undergraduate entrance exam?</h3>
+
+        <p>
+            No. CAT is primarily a postgraduate management
+            entrance examination.
+        </p>
+
+
+        <h3>Q3. Can a Class 12 student directly appear for CAT?</h3>
+
+        <p>
+            Generally, no. CAT is intended for candidates who
+            meet the required bachelor's degree eligibility.
+        </p>
+
+
+        <h3>Q4. Which subjects are tested in CAT?</h3>
+
+        <p>
+            The major areas are VARC, DILR and Quantitative Ability.
+        </p>
+
+
+        <h3>Q5. Is CAT useful only for IIMs?</h3>
+
+        <p>
+            No. CAT scores are also accepted by several other
+            management institutes according to their admission
+            policies.
+        </p>
+
+
+        <h3>Q6. Is CAT difficult?</h3>
+
+        <p>
+            CAT is competitive. Regular practice, strong concepts,
+            mock tests and good time management can significantly
+            improve preparation.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- OFFICIAL WEBSITE -->
+
+<section class="section">
+
+<div class="container">
+
+    <h2>Official CAT Information</h2>
+
+    <p>
+        Always check the latest official notification for
+        eligibility, registration dates, fees, exam pattern,
+        syllabus and admission-related information.
+    </p>
+
+    <a
+        href="https://iimcat.ac.in/"
+        target="_blank"
+        class="btn">
+        Visit Official CAT Website →
+    </a>
+
+</div>
+
+</section>
+
+
+
+<!-- BACK -->
+
+<div class="back">
+
+    <a href="exams.html">
+        ← Back to All Exams
+    </a>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>After12 Education Guide</h3>
+
+    <p>
+        Helping students choose the right course,
+        career, college and entrance exam after Class 12.
+    </p>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 After12 Education Guide. All Rights Reserved.
+
+</div>
+
+
+</body>
+
+</html>

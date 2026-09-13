@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>College Guide - After12</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <a href="index.html" class="logo">
+      After<span>12</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+
+      <a href="index.html">Home</a>
+
+      <a href="courses.html">
+        Courses
+      </a>
+
+      <a href="careers.html">
+        Careers
+      </a>
+
+      <a class="active" href="colleges.html">
+        Colleges
+      </a>
+
+      <a href="exams.html">
+        Exams
+      </a>
+
+      <a href="about.html">
+        About
+      </a>
+
+      <a href="contact.html" class="nav-contact">
+        Contact
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <section class="page-hero">
+
+    <span class="eyebrow">
+      🏫 COLLEGE GUIDE
+    </span>
+
+    <h1>
+      Choose the right college
+    </h1>
+
+    <p>
+      Use a checklist to compare institutions instead
+      of choosing only by name or location.
+    </p>
+
+  </section>
+
+
+  <section class="section">
+
+    <div class="section-heading">
+
+      <span>
+        COLLEGE TYPES
+      </span>
+
+      <h2>
+        Explore by study area
+      </h2>
+
+    </div>
+
+
+    <div class="card-grid">
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          ENG
+        </div>
+
+        <h3>
+          Engineering Colleges
+        </h3>
+
+        <p>
+          Compare programs, accreditation, faculty,
+          labs, internships, placements and fees.
+        </p>
+
+        <ul>
+
+          <li>
+            Branch & specialization
+          </li>
+
+          <li>
+            Placement information
+          </li>
+
+          <li>
+            Fees & scholarships
+          </li>
+
+          <li>
+            Labs and facilities
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          MED
+        </div>
+
+        <h3>
+          Medical Colleges
+        </h3>
+
+        <p>
+          Consider recognition, clinical exposure,
+          hospital facilities, fees and infrastructure.
+        </p>
+
+        <ul>
+
+          <li>Recognition</li>
+
+          <li>Clinical exposure</li>
+
+          <li>Hostel & campus</li>
+
+          <li>Fees</li>
+
+        </ul>
+
+      </article>
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          LAW
+        </div>
+
+        <h3>
+          Law Colleges
+        </h3>
+
+        <p>
+          Check curriculum, internships, moot courts,
+          faculty, placements and recognition.
+        </p>
+
+        <ul>
+
+          <li>Course structure</li>
+
+          <li>Internships</li>
+
+          <li>Legal clinics</li>
+
+          <li>Career support</li>
+
+        </ul>
+
+      </article>
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          UNI
+        </div>
+
+        <h3>
+          Universities
+        </h3>
+
+        <p>
+          Explore universities offering BA, BSc, BCom,
+          management, design and other degrees.
+        </p>
+
+        <ul>
+
+          <li>Programs</li>
+
+          <li>Location</li>
+
+          <li>Scholarships</li>
+
+          <li>Student support</li>
+
+        </ul>
+
+      </article>
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          DES
+        </div>
+
+        <h3>
+          Design Institutes
+        </h3>
+
+        <p>
+          Look for studio facilities, portfolio development,
+          industry projects and experienced faculty.
+        </p>
+
+        <ul>
+
+          <li>Design labs</li>
+
+          <li>Portfolio support</li>
+
+          <li>Industry exposure</li>
+
+          <li>Alumni network</li>
+
+        </ul>
+
+      </article>
+
+
+      <article class="college-card">
+
+        <div class="college-badge">
+          SKL
+        </div>
+
+        <h3>
+          Skill Institutes
+        </h3>
+
+        <p>
+          Compare training quality, equipment,
+          certification and job support.
+        </p>
+
+        <ul>
+
+          <li>Hands-on training</li>
+
+          <li>Certification</li>
+
+          <li>Equipment</li>
+
+          <li>Job support</li>
+
+        </ul>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <section class="section college-finder">
+    <div class="section-heading">
+      <span>UP COLLEGE FINDER</span>
+      <h2>Find colleges in Uttar Pradesh</h2>
+      <p>Search by college, city, course or college type. Every card links directly to the college/university official
+        website.</p>
+    </div>
+
+    <div class="college-tools">
+      <input id="collegeSearch" type="search" placeholder="🔍 Search college, city or course..."
+        aria-label="Search colleges">
+
+      <select id="cityFilter" aria-label="Filter by city">
+        <option value="">All cities</option>
+      </select>
+
+      <select id="courseFilter" aria-label="Filter by course">
+        <option value="">All courses</option>
+      </select>
+
+      <select id="typeFilter" aria-label="Filter by college type">
+        <option value="">All types</option>
+        <option value="Government">Government</option>
+        <option value="Private">Private</option>
+      </select>
+    </div>
+
+    <div class="finder-note">
+      <strong id="collegeCount">0</strong> colleges shown in UP
+      <span>•</span>
+      <span>Always verify fees, admission dates and eligibility from the official website.</span>
+    </div>
+
+    <div id="collegeResults" class="college-results"></div>
+    <div id="noCollegeResults" class="no-results" hidden>
+      <div>🔎</div>
+      <h3>No college found</h3>
+      <p>Try another college name, city, course or filter.</p>
+    </div>
+  </section>
+
+  <style>
+    .college-finder {
+      background: #f7f9fc;
+    }
+
+    .college-tools {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 12px;
+      margin: 24px 0 14px;
+    }
+
+    .college-tools input,
+    .college-tools select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px 14px;
+      border: 1px solid #d7dce5;
+      border-radius: 10px;
+      background: #fff;
+      color: #172033;
+      font: inherit;
+      outline: none;
+    }
+
+    .college-tools input:focus,
+    .college-tools select:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, .10);
+    }
+
+    .finder-note {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 22px;
+      color: #667085;
+      font-size: .92rem;
+    }
+
+    .finder-note strong {
+      color: #2563eb;
+    }
+
+    .college-results {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .up-college-card {
+      background: #fff;
+      border: 1px solid #e4e7ec;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 25px rgba(16, 24, 40, .06);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .up-college-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 32px rgba(16, 24, 40, .10);
+    }
+
+    .up-college-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .up-college-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #eef4ff;
+      font-size: 22px;
+      flex: 0 0 auto;
+    }
+
+    .up-college-type {
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: #ecfdf3;
+      color: #027a48;
+      white-space: nowrap;
+    }
+
+    .up-college-type.private {
+      background: #fff7ed;
+      color: #c2410c;
+    }
+
+    .up-college-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    .up-college-meta {
+      color: #667085;
+      font-size: .9rem;
+      margin: 5px 0;
+    }
+
+    .up-course-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 14px 0 18px;
+    }
+
+    .up-course-list span {
+      background: #f2f4f7;
+      color: #344054;
+      border-radius: 7px;
+      padding: 5px 8px;
+      font-size: .78rem;
+    }
+
+    .up-college-btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 9px;
+      background: #2563eb;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .88rem;
+    }
+
+    .up-college-btn:hover {
+      opacity: .92;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      border: 1px dashed #cbd5e1;
+      border-radius: 14px;
+    }
+
+    .no-results>div {
+      font-size: 34px;
+    }
+
+    @media (max-width: 900px) {
+      .college-tools {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .college-results {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .college-tools,
+      .college-results {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+    // Major UP institutions/colleges for the first version of the finder.
+    // The list can be expanded later without changing the search system.
+    const upColleges = [
+      { name: "Indian Institute of Technology Kanpur", short: "IIT Kanpur", city: "Kanpur", type: "Government", courses: ["B.Tech", "M.Tech", "BS", "MBA"], url: "https://www.iitk.ac.in" },
+      { name: "Indian Institute of Technology (BHU) Varanasi", short: "IIT (BHU) Varanasi", city: "Varanasi", type: "Government", courses: ["B.Tech", "M.Tech", "B.Arch", "MBA"], url: "https://iitbhu.ac.in" },
+      { name: "Banaras Hindu University", short: "BHU", city: "Varanasi", type: "Government", courses: ["BA", "B.Sc", "B.Com", "B.Tech", "MBBS"], url: "https://www.bhu.ac.in" },
+      { name: "University of Lucknow", short: "University of Lucknow", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc", "B.Com", "BCA", "B.Tech"], url: "https://www.lkouniv.ac.in" },
+      { name: "Dr. A.P.J. Abdul Kalam Technical University", short: "AKTU", city: "Lucknow", type: "Government", courses: ["B.Tech", "B.Pharm", "MBA", "MCA"], url: "https://aktu.ac.in" },
+      { name: "King George's Medical University", short: "KGMU", city: "Lucknow", type: "Government", courses: ["MBBS", "BDS", "B.Sc Nursing", "MD"], url: "https://www.kgmu.org" },
+      { name: "Dr. Ram Manohar Lohia National Law University", short: "RMLNLU", city: "Lucknow", type: "Government", courses: ["BA LLB", "LLM"], url: "https://www.rmlnlu.ac.in" },
+      { name: "Aligarh Muslim University", short: "AMU", city: "Aligarh", type: "Government", courses: ["BA", "B.Sc", "B.Com", "B.Tech", "MBBS"], url: "https://www.amu.ac.in" },
+      { name: "Motilal Nehru National Institute of Technology Allahabad", short: "MNNIT Allahabad", city: "Prayagraj", type: "Government", courses: ["B.Tech", "M.Tech", "MBA", "MCA"], url: "https://www.mnnit.ac.in" },
+      { name: "University of Allahabad", short: "University of Allahabad", city: "Prayagraj", type: "Government", courses: ["BA", "B.Sc", "B.Com", "BCA", "MBA"], url: "https://www.allduniv.ac.in" },
+      { name: "Indian Institute of Information Technology Allahabad", short: "IIIT Allahabad", city: "Prayagraj", type: "Government", courses: ["B.Tech", "M.Tech", "MBA"], url: "https://www.iiita.ac.in" },
+      { name: "Harish-Chandra Research Institute", short: "HRI", city: "Prayagraj", type: "Government", courses: ["Physics", "Mathematics"], url: "https://www.hri.res.in" },
+      { name: "Sharda University", short: "Sharda University", city: "Greater Noida", type: "Private", courses: ["B.Tech", "BCA", "BBA", "MBBS", "LLB"], url: "https://www.sharda.ac.in" },
+      { name: "Dr. M. C. Saxena Group of Colleges", short: "Dr. M.C. Saxena Group of Colleges", city: "Lucknow", type: "Private", courses: ["B.Tech", "B.Pharm", "MBA", "B.Ed", "Polytechnic"], url: "https://www.mcsgoc.com/" },
+      { name: "Amity University Uttar Pradesh", short: "Amity University", city: "Noida", type: "Private", courses: ["B.Tech", "BCA", "BBA", "Law", "Design"], url: "https://www.amity.edu/noida" },
+      { name: "Jaypee Institute of Information Technology", short: "JIIT", city: "Noida", type: "Private", courses: ["B.Tech", "M.Tech", "MBA"], url: "https://www.jiit.ac.in" },
+      { name: "Galgotias University", short: "Galgotias University", city: "Greater Noida", type: "Private", courses: ["B.Tech", "BCA", "BBA", "Law", "MBA"], url: "https://www.galgotiasuniversity.edu.in" },
+      { name: "GL Bajaj Institute of Technology and Management", short: "GL Bajaj", city: "Greater Noida", type: "Private", courses: ["B.Tech", "MBA", "MCA"], url: "https://www.glbitm.org" },
+      { name: "KIET Group of Institutions", short: "KIET", city: "Ghaziabad", type: "Private", courses: ["B.Tech", "MBA", "MCA", "Pharmacy"], url: "https://www.kiet.edu" },
+      { name: "Ajay Kumar Garg Engineering College", short: "AKGEC", city: "Ghaziabad", type: "Private", courses: ["B.Tech", "M.Tech", "MCA"], url: "https://www.akgec.ac.in" },
+      { name: "Bennett University", short: "Bennett University", city: "Greater Noida", type: "Private", courses: ["B.Tech", "BCA", "BBA", "Law"], url: "https://www.bennett.edu.in" },
+      { name: "A P Sen Memorial Girls Degree College", short: "AP Sen College", city: "Lucknow", type: "Female", courses: ["BA"], url: "" },
+
+      { name: "Ameer-Udaula Islamia Degree College", short: "Islamia Degree College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Com"], url: "" },
+
+      { name: "Arjunganj Vidya Mandir", short: "Arjunganj Vidya Mandir", city: "Lucknow", type: "Co-Ed", courses: ["BA"], url: "" },
+
+      { name: "Avadh Girls Degree College", short: "Avadh Girls College", city: "Lucknow", type: "Female", courses: ["BA"], url: "" },
+
+      { name: "B S N V Degree College", short: "BSNV College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com"], url: "" },
+
+      { name: "Basudev Memorial Girls Degree College", short: "Basudev Memorial", city: "Lucknow", type: "Female", courses: ["BA", "B.Com"], url: "" },
+
+      { name: "Bhartiya Vidya Bhawan Girls Degree College", short: "BVB Girls College", city: "Lucknow", type: "Female", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "Bright Career Girls Degree College", short: "Bright Career College", city: "Lucknow", type: "Female", courses: ["BA", "B.Com"], url: "" },
+
+      { name: "Career Convent Girls Degree College", short: "Career Convent College", city: "Lucknow", type: "Female", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "City Academy Degree College", short: "City Academy College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Com", "B.Sc", "BBA", "BCA"], url: "" },
+
+      { name: "D A V Degree College", short: "DAV Degree College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com"], url: "" },
+
+      { name: "Jai Narain Degree College", short: "J N Degree College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com", "B.Ed", "BBA", "LLB"], url: "" },
+
+      { name: "Vidyant Hindu Degree College", short: "Vidyant College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "Shri Guru Nanak Girls Degree College", short: "SGN Girls College", city: "Lucknow", type: "Female", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "Navyug Degree College", short: "Navyug College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "National P.G. College", short: "NPG College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com", "BBA", "BCA", "B.Voc"], url: "" },
+
+      { name: "Lucknow Christian Degree College", short: "LCD College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com"], url: "" },
+
+      { name: "Shia P.G. College", short: "Shia PG College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "B.Com", "BBA", "BCA"], url: "" },
+
+      { name: "Karamat Husain Muslim Girls P.G. College", short: "Karamat Husain College", city: "Lucknow", type: "Female", courses: ["BA", "B.Com", "B.Sc"], url: "" },
+
+      { name: "Isabella Thoburn College", short: "I.T. College", city: "Lucknow", type: "Female", courses: ["BA", "B.Sc", "B.Com", "B.Ed"], url: "" },
+
+      { name: "Dr. Shakuntala Misra National Rehabilitation University", short: "DSMNRU", city: "Lucknow", type: "Government", courses: ["BA", "B.Com", "B.Sc", "B.Tech", "B.Ed", "LLB", "MBA", "MCA"], url: "https://dsmru.up.nic.in" },
+
+      { name: "Dr. A.P.J. Abdul Kalam Technical University", short: "AKTU", city: "Lucknow", type: "Government", courses: ["B.Tech", "M.Tech", "B.Pharm", "M.Pharm", "MBA", "MCA"], url: "https://aktu.ac.in" },
+
+      { name: "Dr. Ram Manohar Lohiya National Law University", short: "RMLNLU", city: "Lucknow", type: "Government", courses: ["BA LLB", "LLM", "PhD"], url: "https://www.rmlnlu.ac.in" },
+
+      { name: "Khwaja Moinuddin Chishti Language University", short: "KMC Language University", city: "Lucknow", type: "Government", courses: ["BA", "B.Com", "B.Sc", "BBA", "BCA", "MBA"], url: "https://kmclu.ac.in" },
+
+      { name: "University of Lucknow", short: "Lucknow University", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc", "B.Com", "BBA", "BCA", "B.Tech", "LLB", "B.Ed", "MBA", "MCA"], url: "https://www.lkouniv.ac.in" },
+
+      { name: "Integral University", short: "Integral University", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "B.Com", "B.Pharm", "B.Arch", "LLB", "MBA", "MCA"], url: "https://www.iul.ac.in" },
+
+      { name: "Babu Banarasi Das University", short: "BBD University", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "B.Com", "B.Pharm", "B.Arch", "LLB", "MBA", "MCA"], url: "https://bbdu.ac.in" },
+
+
+      { name: "Amity University Uttar Pradesh Lucknow Campus", short: "Amity University Lucknow", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "B.Com", "B.Arch", "LLB", "MBA", "MCA"], url: "https://www.amity.edu/lucknow" },
+
+
+      { name: "A P Sen Memorial Girls Degree College", short: "AP Sen College", city: "Lucknow", type: "Aided", courses: ["BA"], url: "" },
+
+      { name: "Ameer-Udaula Islamia Degree College", short: "Islamia Degree College", city: "Lucknow", type: "Co-Ed", courses: ["BA"], url: "" },
+
+      { name: "Arjunganj Vidya Mandir", short: "Arjunganj Vidya Mandir", city: "Lucknow", type: "Co-Ed", courses: ["BA"], url: "" },
+
+      { name: "Avadh Girls Degree College", short: "Avadh Girls College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "B S N V Degree College", short: "BSNV College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Basudev Memorial Girls Degree College", short: "Basudev Memorial", city: "Lucknow", type: "Female", courses: ["BA"], url: "" },
+
+      { name: "Bhartiya Vidya Bhawan Girls Degree College", short: "BVB Girls College", city: "Lucknow", type: "Female", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Bright Career Girls Degree College", short: "Bright Career College", city: "Lucknow", type: "Female", courses: ["BA"], url: "" },
+
+      { name: "Career Convent Girls Degree College", short: "Career Convent College", city: "Lucknow", type: "Female", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "City Academy Degree College", short: "City Academy College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "BBA", "BCA"], url: "" },
+
+      { name: "D A V Degree College", short: "DAV Degree College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Jai Narayan Mishra Postgraduate Degree College", short: "J.N. College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc", "BBA", "LLB"], url: "" },
+
+      { name: "Vidyant Hindu Degree College", short: "Vidyant College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Shri Guru Nanak Girls Degree College", short: "SGN Girls College", city: "Lucknow", type: "Female", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Navyug Degree College", short: "Navyug College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "National P.G. College", short: "NPG College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "BBA", "BCA"], url: "" },
+
+      { name: "Lucknow Christian Degree College", short: "LCD College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Lucknow Christian College", short: "LCC", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Shia P.G. College", short: "Shia PG College", city: "Lucknow", type: "Co-Ed", courses: ["BA", "B.Sc", "BBA", "BCA"], url: "" },
+
+      { name: "Karamat Husain Muslim Girls P.G. College", short: "Karamat Husain College", city: "Lucknow", type: "Female", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Isabella Thoburn College", short: "I.T. College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Dr. Shakuntala Misra National Rehabilitation University", short: "DSMNRU", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc", "B.Tech", "LLB", "MBA", "MCA"], url: "https://dsmru.up.nic.in" },
+
+      { name: "Dr. A.P.J. Abdul Kalam Technical University", short: "AKTU", city: "Lucknow", type: "Government", courses: ["B.Tech", "M.Tech", "MBA", "MCA"], url: "https://aktu.ac.in" },
+
+      { name: "Dr. Ram Manohar Lohiya National Law University", short: "RMLNLU", city: "Lucknow", type: "Government", courses: ["LLB"], url: "https://www.rmlnlu.ac.in" },
+
+      { name: "Khwaja Moinuddin Chishti Language University", short: "KMC Language University", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc", "BBA", "BCA", "MBA"], url: "https://kmclu.ac.in" },
+
+      { name: "University of Lucknow", short: "Lucknow University", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc", "BBA", "BCA", "B.Tech", "LLB", "MBA"], url: "https://www.lkouniv.ac.in" },
+      { name: "R.R. Group of Institutions", short: "RR Group of Institutions", city: "Lucknow", type: "Private", courses: ["B.Tech", "MBA", "MCA", "B.Pharm", "D.Pharm", "Polytechnic"], url: "" },
+
+      { name: "SR Group of Institutions", short: "SR Group of Institutions", city: "Lucknow", type: "Private", courses: ["B.Tech", "MBA", "MCA", "B.Pharm", "D.Pharm", "Polytechnic"], url: "" },
+      { name: "Integral University", short: "Integral University", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "LLB", "MBA"], url: "https://www.iul.ac.in" },
+
+      { name: "Babu Banarasi Das University", short: "BBD University", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "LLB", "MBA"], url: "https://bbdu.ac.in" },
+
+      { name: "Amity University Uttar Pradesh Lucknow Campus", short: "Amity Lucknow", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "LLB", "MBA"], url: "https://www.amity.edu/lucknow" },
+
+      { name: "Kalicharan Degree College", short: "Kalicharan Degree College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Khun Khun Ji Girls Degree College", short: "Khun Khun Ji College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Maharaja Bijli Pasi Rajkiya Mahavidyalaya", short: "MBP Government College", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Mahila Vidyalaya Degree College", short: "Mahila Vidyalaya College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Mumtaz P.G. College", short: "Mumtaz PG College", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc", "MBA"], url: "" },
+
+      { name: "Nagar Nigam Degree College", short: "Nagar Nigam College", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Nari Shiksha Niketan P.G. College", short: "Nari Shiksha Niketan", city: "Lucknow", type: "Aided", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Lucknow Public College of Professional Studies", short: "LPCPS", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Ram Prasad Bismil Memorial Degree College", short: "RPB Memorial College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Lala Mahadev Prasad Verma Balika Mahavidyalaya", short: "LMPV Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "School of Management Sciences", short: "SMS Lucknow", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "https://www.smslucknow.com" },
+
+      { name: "Aryavart Institute of Higher Education", short: "Aryavart Institute", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Bora Institute of Management Sciences", short: "BIMS", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "Gautam Budh Degree College", short: "Gautam Budh College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Shri Mahesh Prasad Degree College", short: "SMP Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Sardar Bhagat Singh College of Higher Education", short: "SBS College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Mahamaya Rajkiya Mahavidyalaya", short: "Mahamaya Government College", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "R N Girls Degree College", short: "RN Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Kunwar Asif Ali Sanju Miyan Mahavidyalaya", short: "KAS Miyan College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Surjan Devi Anusuiya Devi Degree College", short: "SDA Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Adarsh Satyendra Mahavidyalaya", short: "Adarsh Satyendra College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Subhash Chandra Bose Institute of Higher Education", short: "SC Bose Institute", city: "Lucknow", type: "Private", courses: ["BA", "BBA", "BCA"], url: "" },
+
+      { name: "Lucknow College of Management & Education", short: "LCME", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "RDSJ College of Management", short: "RDSJ College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "S S Institute of Management", short: "SSIM", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "Career Degree College", short: "Career Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "L.N. Academy Mahavidyalaya", short: "LN Academy", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Sharada Institute of Management", short: "Sharada Institute", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "C.D. Girls Degree College", short: "CD Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "St. Mother Teresa Vidhi Mahavidyalaya", short: "Mother Teresa Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "Baba Sahab Bhim Rao Ambedkar Law College", short: "BSBR Ambedkar Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "Sri Ram Swaroop Memorial College of Management", short: "SRSM College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "Narvdeshwar Law College", short: "Narvdeshwar Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "City Academy Law College", short: "City Academy Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "Dr. R.M.L. Institute of Medical Sciences", short: "RMLIMS", city: "Lucknow", type: "Government", courses: ["MBBS"], url: "https://www.drrmlims.ac.in" },
+
+      { name: "B.N. College of Engineering and Technology", short: "BNCET", city: "Lucknow", type: "Private", courses: ["B.Tech", "MBA"], url: "" },
+
+      { name: "Institute of Engineering and Technology", short: "IET Lucknow", city: "Lucknow", type: "Government", courses: ["B.Tech", "M.Tech"], url: "" },
+
+      { name: "King George's Medical University", short: "KGMU", city: "Lucknow", type: "Government", courses: ["MBBS"], url: "https://www.kgmu.org" },
+
+      { name: "Baba Saheb Bhimrao Ambedkar University", short: "BBAU", city: "Lucknow", type: "Central", courses: ["BA", "B.Sc", "B.Tech", "BCA", "BBA", "MBA"], url: "https://www.bbau.ac.in" },
+
+      { name: "Shri Ramswaroop Memorial University", short: "SRMU", city: "Lucknow", type: "Private", courses: ["B.Tech", "BCA", "BBA", "MBA"], url: "https://srmu.ac.in" },
+
+      { name: "Era University", short: "Era University", city: "Lucknow", type: "Private", courses: ["MBBS", "MBA"], url: "https://www.erauniversity.in" },
+
+      { name: "Dr. Asha Smriti Mahavidyalaya", short: "Dr. Asha Smriti College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Eram Girls Degree College", short: "Eram Girls College", city: "Lucknow", type: "Private", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "G S R M Memorial Degree College", short: "GSRM College", city: "Lucknow", type: "Private", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Heera Lal Yadav Balika Degree College", short: "HLY Balika College", city: "Lucknow", type: "Private", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Ramadheen Singh Girls Degree College", short: "Ramadheen Singh College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Rama Mahavidyalaya", short: "Rama Mahavidyalaya", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Rajat Degree College", short: "Rajat Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Unity Degree College", short: "Unity College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Veer Bahadur Singh Mahila Mahavidyalaya", short: "VBS Mahila College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Surya College of Business Management", short: "Surya College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Modern Girls College of Professional Studies", short: "Modern Girls College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Jagannath Prasad Bhagwan Dayee Sahu Kanya Mahavidyalaya", short: "JPBD Sahu College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Eras College of Management", short: "ERAS College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "College of Innovative Management & Science", short: "CIMS Lucknow", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "Bhal Chandra Institute of Education and Management", short: "Bhal Chandra Institute", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Rajat Girls Degree College", short: "Rajat Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Rajat Womens College of Education and Management", short: "Rajat Womens College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Satyanand Uchch Shiksha Sansthan", short: "Satyanand Institute", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "City College of Management", short: "City College Management", city: "Lucknow", type: "Private", courses: ["BBA", "BCA", "MBA"], url: "" },
+
+      { name: "Lal Bahadur Shastri Girls College of Management", short: "LBS Girls College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Goel Institute of Higher Studies", short: "Goel Institute", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Techno Institute of Higher Studies", short: "Techno Institute", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "G C R G Memorial Trust's Group of Institutions", short: "GCRG Group", city: "Lucknow", type: "Private", courses: ["B.Tech", "MBA"], url: "" },
+
+      { name: "Eram Degree College", short: "Eram Degree College", city: "Lucknow", type: "Private", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Netaji Subhash Chandra Bose Rajkiya Mahavidyalaya", short: "NSCB Government College", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Florence Nightingale Mahila Public College", short: "Florence Nightingale College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Lala Mahaveer Prasad Om Prakash Verma Kanya Degree College", short: "LMPV Kanya College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Dr. Rajendra Prasad Girls Degree College", short: "Dr. Rajendra Prasad College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Basudev Degree College", short: "Basudev Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Dayal Group of Institutions", short: "Dayal Group", city: "Lucknow", type: "Private", courses: ["B.Tech", "BBA", "BCA"], url: "" },
+
+      { name: "Swatantra Girls Degree College", short: "Swatantra Girls College", city: "Lucknow", type: "Private", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "A.K.G. College", short: "AKG College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Radheyshyam Degree College", short: "Radheyshyam College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Rama Convent Mahavidyalaya", short: "Rama Convent College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Ram Dulari Alok Kumar Mahila Degree College", short: "RDAK Mahila College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "R.D.S.J. Law College", short: "RDSJ Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "Divya Singh Memorial Mahila Mahavidyalaya", short: "Divya Singh Memorial College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Exon Montessori Girls Degree College", short: "Exon Montessori College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Pt. Deen Dayal Upadhyaya Rajkiya Kanya Mahavidyalaya", short: "DDU Government Girls College", city: "Lucknow", type: "Government", courses: ["BA", "B.Sc"], url: "" },
+
+      { name: "Vansthali Gyanpeeth Girls Degree College", short: "Vansthali Gyanpeeth", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Kewalpatti Ram Asre Mahavidyalaya", short: "Kewalpatti College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "City Women's College", short: "City Women's College", city: "Lucknow", type: "Private", courses: ["BA", "BCA"], url: "" },
+
+      { name: "City Girls College", short: "City Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Pt. Madan Mohan Malviya Girls Degree College", short: "MMM Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Prabudh Medical College Hospital & Research Centre", short: "Prabudh Medical College", city: "Lucknow", type: "Private", courses: ["MBBS"], url: "" },
+
+      { name: "Sri Krishna Dutt Academy", short: "SKD Academy", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "City College", short: "City College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "Eram College", short: "Eram College", city: "Lucknow", type: "Private", courses: ["BBA", "BCA"], url: "" },
+
+      { name: "City Law College", short: "City Law College", city: "Lucknow", type: "Private", courses: ["LLB"], url: "" },
+
+      { name: "The Study Hall College", short: "Study Hall College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Gaya Prasad Institute of Human Excellence", short: "Gaya Prasad Institute", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "T.D.L. College of Engineering & Management Sciences", short: "TDL College", city: "Lucknow", type: "Private", courses: ["B.Tech", "MBA"], url: "" },
+
+      { name: "Maharana Pratap College of Management & Commerce", short: "MPC Management College", city: "Lucknow", type: "Private", courses: ["BBA"], url: "" },
+
+      { name: "The Himalayan Mahavidyalaya", short: "Himalayan Mahavidyalaya", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "RAS Degree College", short: "RAS Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "C.B. Gupta B.S.S. Mahavidyalaya", short: "CB Gupta College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Sardar Patel Institute of Ayurvedic Medical Sciences & Research Centre", short: "Sardar Patel Ayurvedic College", city: "Lucknow", type: "Private", courses: [], url: "" },
+
+      { name: "Sushila Devi Memorial Girls Degree College", short: "Sushila Devi Girls College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "SMT Degree College", short: "SMT Degree College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Integral and Innovative Sustainable Education College", short: "IISE College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Ram Bharose Maikulal Mahavidyalaya", short: "RBM College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+
+      { name: "Krishna College of Education and Management", short: "Krishna College", city: "Lucknow", type: "Private", courses: ["BBA"], url: "" },
+
+      { name: "Ambalika Institute for Higher Education", short: "Ambalika Institute", city: "Lucknow", type: "Private", courses: ["BBA"], url: "" },
+
+      { name: "Shri Dineshwar Mishra Ji Degree College", short: "Dineshwar Mishra College", city: "Lucknow", type: "Private", courses: ["BA"], url: "" },
+      { name: "Babu Sunder Singh Institute of Technology & Management", short: "BSSITM", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Amity University Lucknow Campus", short: "Amity University", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Indian Institute of Information Technology Lucknow", short: "IIIT Lucknow", city: "Lucknow", type: "Government", courses: ["B.Tech"], url: "" },
+
+      { name: "Ansal Technical Campus", short: "ATC", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Lucknow Model Institute of Technology & Management", short: "LMITM", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Annie Besant College of Engineering & Management", short: "ABCEM", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Asia School of Engineering & Management", short: "ASEAM", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Saraswati Educational Institutions", short: "SEI", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Varu Institute of Professional Studies", short: "VIPS", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+      { name: "Goel Group of Colleges", short: "Goel Group", city: "Lucknow", type: "Private", courses: ["B.Tech"], url: "" },
+
+
+    ];
+
+
+    const searchEl = document.getElementById("collegeSearch");
+    const cityEl = document.getElementById("cityFilter");
+    const courseEl = document.getElementById("courseFilter");
+    const typeEl = document.getElementById("typeFilter");
+    const resultsEl = document.getElementById("collegeResults");
+    const countEl = document.getElementById("collegeCount");
+    const emptyEl = document.getElementById("noCollegeResults");
+
+    [...new Set(upColleges.map(c => c.city))].sort().forEach(city => {
+      cityEl.insertAdjacentHTML("beforeend", `<option value="${city}">${city}</option>`);
+    });
+
+    [...new Set(upColleges.flatMap(c => c.courses))].sort().forEach(course => {
+      courseEl.insertAdjacentHTML("beforeend", `<option value="${course}">${course}</option>`);
+    });
+
+    function renderColleges() {
+      const q = searchEl.value.trim().toLowerCase();
+      const city = cityEl.value;
+      const course = courseEl.value;
+      const type = typeEl.value;
+
+      const filtered = upColleges.filter(c => {
+        const searchable = [c.name, c.short, c.city, c.type, ...c.courses].join(" ").toLowerCase();
+        return (!q || searchable.includes(q))
+          && (!city || c.city === city)
+          && (!course || c.courses.includes(course))
+          && (!type || c.type === type);
+      });
+
+      countEl.textContent = filtered.length;
+      emptyEl.hidden = filtered.length !== 0;
+
+      resultsEl.innerHTML = filtered.map(c => `
+      <article class="up-college-card">
+        <div class="up-college-top">
+          <div class="up-college-icon">🎓</div>
+          <span class="up-college-type ${c.type === "Private" ? "private" : ""}">${c.type}</span>
+        </div>
+        <h3>${c.short}</h3>
+        <p class="up-college-meta">📍 ${c.city}, Uttar Pradesh</p>
+        <p class="up-college-meta">🏛️ ${c.name}</p>
+        <div class="up-course-list">
+          ${c.courses.map(course => `<span>${course}</span>`).join("")}
+        </div>
+        <a class="up-college-btn" href="${c.url}" target="_blank" rel="noopener noreferrer">
+          Visit Official Website ↗
+        </a>
+      </article>
+    `).join("");
+    }
+
+    [searchEl, cityEl, courseEl, typeEl].forEach(el => {
+      el.addEventListener(el.tagName === "INPUT" ? "input" : "change", renderColleges);
+    });
+
+    renderColleges();
+  </script>
+
+  <section class="section soft">
+
+    <div class="split">
+
+      <div>
+
+        <span class="eyebrow">
+          BEFORE ADMISSION
+        </span>
+
+        <h2>
+          7 things to verify
+        </h2>
+
+        <ol class="number-list">
+
+          <li>
+            Course eligibility
+          </li>
+
+          <li>
+            Recognition / accreditation
+          </li>
+
+          <li>
+            Total cost, not only tuition
+          </li>
+
+          <li>
+            Scholarship availability
+          </li>
+
+          <li>
+            Faculty and facilities
+          </li>
+
+          <li>
+            Internship / placement information
+          </li>
+
+          <li>
+            Official admission dates
+          </li>
+
+        </ol>
+
+      </div>
+
+
+      <div class="warning">
+
+        <h3>
+          ⚠️ Verify current information
+        </h3>
+
+        <p>
+          College fees, admission dates, eligibility,
+          counselling rules and exam requirements can
+          change. Always verify the latest information
+          from the official institution or exam website
+          before applying or paying.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div>
+
+      <a href="index.html" class="logo">
+        After<span>12</span>
+      </a>
+
+      <p>
+        Helping students make confident decisions
+        after Class 12.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>Explore</h4>
+
+      <a href="courses.html">Courses</a>
+
+      <a href="careers.html">Careers</a>
+
+      <a href="colleges.html">Colleges</a>
+
+      <a href="exams.html">Exams</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Company</h4>
+
+      <a href="about.html">About</a>
+
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Popular</h4>
+
+      <a href="courses.html?stream=science">
+        Science
+      </a>
+
+      <a href="courses.html?stream=commerce">
+        Commerce
+      </a>
+
+      <a href="courses.html?stream=arts">
+        Arts
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <div class="copyright">
+    © 2026 After12 Education Guide
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>JEE Exam Guide - After12</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #222;
+}
+
+/* HERO */
+
+.exam-hero {
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.exam-hero .badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #e5eaff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.exam-hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.exam-hero h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0 20px;
+}
+
+.exam-hero p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* MAIN */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+
+/* QUICK INFO */
+
+.quick-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.info-card small {
+    display: block;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.info-card strong {
+    font-size: 18px;
+}
+
+
+/* SECTION */
+
+.content-section {
+    background: white;
+    padding: 32px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.content-section h3 {
+    margin-top: 25px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.content-section ul {
+    line-height: 1.9;
+}
+
+.content-section li {
+    margin-bottom: 6px;
+}
+
+
+/* TABLE */
+
+.exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.exam-table th,
+.exam-table td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: left;
+}
+
+.exam-table th {
+    background: #f4f5f8;
+}
+
+
+/* SUBJECT GRID */
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.subject-card {
+    padding: 25px;
+    background: #f7f8fc;
+    border-radius: 12px;
+}
+
+.subject-card h3 {
+    margin-top: 0;
+}
+
+
+/* STEPS */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.step {
+    padding: 22px;
+    background: #f7f8fc;
+    border-radius: 12px;
+}
+
+.step-number {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* FAQ */
+
+.faq {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.faq h3 {
+    margin: 0 0 8px;
+}
+
+
+/* BUTTON */
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.official-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+    .quick-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .exam-hero h1 {
+        font-size: 36px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .quick-info {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 22px;
+    }
+
+    .exam-table {
+        font-size: 14px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+After<span>12</span>
+</a>
+
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
+
+<nav id="navMenu">
+
+<a href="index.html">Home</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="careers.html">Careers</a>
+
+<a href="colleges.html">Colleges</a>
+
+<a class="active" href="exams.html">
+Exams
+</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html"
+class="nav-contact">
+Contact
+</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="exam-hero">
+
+<span class="badge">
+ENGINEERING ENTRANCE EXAM
+</span>
+
+<h1>JEE</h1>
+
+<h2>
+Joint Entrance Examination
+</h2>
+
+<p>
+
+JEE is one of India's major entrance examination
+routes for students who want to pursue undergraduate
+engineering and technology programs.
+
+</p>
+
+</section>
+
+
+<!-- MAIN -->
+
+<main class="container">
+
+<a href="exams.html" class="back-btn">
+← Back to All Exams
+</a>
+
+
+<!-- QUICK INFORMATION -->
+
+<section class="quick-info">
+
+<div class="info-card">
+
+<small>Exam Name</small>
+
+<strong>JEE</strong>
+
+</div>
+
+
+<div class="info-card">
+
+<small>Field</small>
+
+<strong>Engineering</strong>
+
+</div>
+
+
+<div class="info-card">
+
+<small>Level</small>
+
+<strong>National</strong>
+
+</div>
+
+
+<div class="info-card">
+
+<small>Mode</small>
+
+<strong>Computer Based</strong>
+
+</div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section class="content-section">
+
+<h2>📘 What is JEE?</h2>
+
+<p>
+
+JEE stands for Joint Entrance Examination.
+It is an important entrance examination pathway
+for students who want to study engineering and
+technology at undergraduate level.
+
+</p>
+
+<p>
+
+JEE is mainly associated with two stages:
+<strong>JEE Main</strong> and <strong>JEE Advanced</strong>.
+JEE Main is also used for admission to various
+engineering institutions, while JEE Advanced is
+associated with admission to the IITs for eligible
+candidates.
+
+</p>
+
+<p>
+
+Students should always check the latest official
+notification because eligibility criteria,
+attempt rules, dates, syllabus and admission rules
+can change.
+
+</p>
+
+</section>
+
+
+<!-- WHY JEE -->
+
+<section class="content-section">
+
+<h2>🎯 Why should you take JEE?</h2>
+
+<ul>
+
+<li>For undergraduate engineering admissions.</li>
+
+<li>For admission opportunities in participating
+engineering institutions.</li>
+
+<li>For students interested in technology and
+engineering careers.</li>
+
+<li>For students targeting IITs through the
+JEE Advanced route.</li>
+
+<li>For exploring different engineering branches.</li>
+
+</ul>
+
+</section>
+
+
+<!-- ELIGIBILITY -->
+
+<section class="content-section">
+
+<h2>🎓 JEE Eligibility</h2>
+
+<p>
+
+Eligibility depends on the particular JEE stage
+and the admission year. Students must carefully
+read the current official notification.
+
+</p>
+
+<h3>Educational Qualification</h3>
+
+<ul>
+
+<li>
+Candidates generally need to have passed or be
+appearing in the required Class 12/equivalent
+qualification.
+</li>
+
+<li>
+Physics and Mathematics are important subjects
+for engineering admissions.
+</li>
+
+<li>
+The exact subject combination and other conditions
+depend on the examination and institution.
+</li>
+
+</ul>
+
+<h3>Important</h3>
+
+<p>
+
+Do not rely on old eligibility information.
+Always verify the current year's official
+notification before applying.
+
+</p>
+
+</section>
+
+
+<!-- EXAM STRUCTURE -->
+
+<section class="content-section">
+
+<h2>📝 JEE Structure</h2>
+
+<table class="exam-table">
+
+<tr>
+
+<th>Stage</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>JEE Main</td>
+
+<td>
+Engineering entrance and eligibility pathway
+for participating institutions.
+</td>
+
+</tr>
+
+<tr>
+
+<td>JEE Advanced</td>
+
+<td>
+Entrance route for IIT admissions for candidates
+who meet the applicable requirements.
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- SUBJECTS -->
+
+<section class="content-section">
+
+<h2>📚 Main Subjects</h2>
+
+<div class="subject-grid">
+
+
+<div class="subject-card">
+
+<h3>⚛ Physics</h3>
+
+<ul>
+
+<li>Mechanics</li>
+
+<li>Electrodynamics</li>
+
+<li>Thermodynamics</li>
+
+<li>Optics</li>
+
+<li>Modern Physics</li>
+
+</ul>
+
+</div>
+
+
+<div class="subject-card">
+
+<h3>🧪 Chemistry</h3>
+
+<ul>
+
+<li>Physical Chemistry</li>
+
+<li>Organic Chemistry</li>
+
+<li>Inorganic Chemistry</li>
+
+<li>Periodic Table</li>
+
+<li>Chemical Bonding</li>
+
+</ul>
+
+</div>
+
+
+<div class="subject-card">
+
+<h3>📐 Mathematics</h3>
+
+<ul>
+
+<li>Algebra</li>
+
+<li>Calculus</li>
+
+<li>Coordinate Geometry</li>
+
+<li>Trigonometry</li>
+
+<li>Probability</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- EXAM PATTERN -->
+
+<section class="content-section">
+
+<h2>📊 Exam Pattern</h2>
+
+<p>
+
+The exact examination pattern can vary by paper
+and year. Candidates should check the latest
+official information before preparing.
+
+</p>
+
+<table class="exam-table">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Area</th>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>Physics concepts and numerical/application
+based questions</td>
+
+</tr>
+
+<tr>
+
+<td>Chemistry</td>
+
+<td>Physical, Organic and Inorganic Chemistry</td>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+
+<td>Mathematical concepts and problem solving</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- SYLLABUS -->
+
+<section class="content-section">
+
+<h2>📖 Important Syllabus Areas</h2>
+
+<h3>Physics</h3>
+
+<ul>
+
+<li>Units and Measurements</li>
+<li>Kinematics</li>
+<li>Laws of Motion</li>
+<li>Work, Energy and Power</li>
+<li>Rotational Motion</li>
+<li>Gravitation</li>
+<li>Properties of Matter</li>
+<li>Thermodynamics</li>
+<li>Waves</li>
+<li>Electrostatics</li>
+<li>Current Electricity</li>
+<li>Magnetism</li>
+<li>Electromagnetic Induction</li>
+<li>Optics</li>
+<li>Modern Physics</li>
+
+</ul>
+
+
+<h3>Chemistry</h3>
+
+<ul>
+
+<li>Some Basic Concepts of Chemistry</li>
+<li>Atomic Structure</li>
+<li>Chemical Bonding</li>
+<li>Thermodynamics</li>
+<li>Equilibrium</li>
+<li>Electrochemistry</li>
+<li>Chemical Kinetics</li>
+<li>Organic Chemistry Basics</li>
+<li>Hydrocarbons</li>
+<li>Alcohols and related compounds</li>
+<li>Coordination Compounds</li>
+<li>Periodic Classification</li>
+
+</ul>
+
+
+<h3>Mathematics</h3>
+
+<ul>
+
+<li>Sets and Functions</li>
+<li>Complex Numbers</li>
+<li>Quadratic Equations</li>
+<li>Sequences and Series</li>
+<li>Permutations and Combinations</li>
+<li>Binomial Theorem</li>
+<li>Coordinate Geometry</li>
+<li>Limits and Continuity</li>
+<li>Differentiation</li>
+<li>Integration</li>
+<li>Differential Equations</li>
+<li>Probability</li>
+<li>Statistics</li>
+
+</ul>
+
+</section>
+
+
+<!-- PREPARATION -->
+
+<section class="content-section">
+
+<h2>🚀 JEE Preparation Strategy</h2>
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<h3>Understand the syllabus</h3>
+
+<p>
+First understand the complete syllabus and
+identify your strong and weak topics.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<h3>Build concepts</h3>
+
+<p>
+Focus on understanding concepts before solving
+large numbers of questions.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<h3>Practice questions</h3>
+
+<p>
+Solve basic questions first and gradually move
+towards difficult problems.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">04</div>
+
+<h3>Previous-year questions</h3>
+
+<p>
+Practice previous-year questions to understand
+the type and difficulty of questions.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">05</div>
+
+<h3>Mock tests</h3>
+
+<p>
+Take regular mock tests and practice solving
+questions within the available time.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">06</div>
+
+<h3>Analyze mistakes</h3>
+
+<p>
+Maintain a mistake notebook and revise questions
+that you repeatedly get wrong.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- STUDY PLAN -->
+
+<section class="content-section">
+
+<h2>🗓️ Simple Daily Study Plan</h2>
+
+<table class="exam-table">
+
+<tr>
+
+<th>Activity</th>
+
+<th>Suggested Focus</th>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>Concept + numerical practice</td>
+
+</tr>
+
+<tr>
+
+<td>Chemistry</td>
+
+<td>Theory + reactions + questions</td>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+
+<td>Concept + problem solving</td>
+
+</tr>
+
+<tr>
+
+<td>Revision</td>
+
+<td>Formula and weak-topic revision</td>
+
+</tr>
+
+<tr>
+
+<td>Mock/PYQ</td>
+
+<td>Timed practice</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<!-- COLLEGES -->
+
+<section class="content-section">
+
+<h2>🏫 Admission Opportunities</h2>
+
+<p>
+
+JEE scores/ranks can be used in different
+admission processes depending on the examination,
+institution and applicable counselling rules.
+
+</p>
+
+<h3>Examples of Institutions/Routes</h3>
+
+<ul>
+
+<li>IITs — through the applicable JEE Advanced route</li>
+
+<li>NITs — through JEE Main based admission process</li>
+
+<li>IIITs — through applicable admission process</li>
+
+<li>Other participating engineering institutions</li>
+
+</ul>
+
+<p>
+
+Admission rules, seat allocation and counselling
+processes should always be checked for the relevant
+admission year.
+
+</p>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section class="content-section">
+
+<h2>🎓 Popular Engineering Branches</h2>
+
+<ul>
+
+<li>Computer Science & Engineering</li>
+
+<li>Information Technology</li>
+
+<li>Electronics & Communication Engineering</li>
+
+<li>Electrical Engineering</li>
+
+<li>Mechanical Engineering</li>
+
+<li>Civil Engineering</li>
+
+<li>Chemical Engineering</li>
+
+<li>Aerospace Engineering</li>
+
+<li>Biotechnology</li>
+
+</ul>
+
+</section>
+
+
+<!-- CAREER -->
+
+<section class="content-section">
+
+<h2>💼 Career Opportunities After Engineering</h2>
+
+<ul>
+
+<li>Software Developer</li>
+
+<li>Web Developer</li>
+
+<li>Data Analyst</li>
+
+<li>AI/ML Engineer</li>
+
+<li>Cloud Engineer</li>
+
+<li>Cybersecurity Professional</li>
+
+<li>Mechanical Engineer</li>
+
+<li>Electrical Engineer</li>
+
+<li>Civil Engineer</li>
+
+<li>Research & Development Professional</li>
+
+</ul>
+
+</section>
+
+
+<!-- MISTAKES -->
+
+<section class="content-section">
+
+<h2>⚠️ Common Preparation Mistakes</h2>
+
+<ul>
+
+<li>Studying without understanding the syllabus.</li>
+
+<li>Ignoring weak subjects.</li>
+
+<li>Only watching lectures without solving questions.</li>
+
+<li>Not practicing previous-year questions.</li>
+
+<li>Taking too many tests without analyzing mistakes.</li>
+
+<li>Ignoring revision.</li>
+
+<li>Using too many study resources at the same time.</li>
+
+</ul>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="content-section">
+
+<h2>❓ Frequently Asked Questions</h2>
+
+
+<div class="faq">
+
+<h3>What does JEE stand for?</h3>
+
+<p>
+JEE stands for Joint Entrance Examination.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<h3>What are the main subjects in JEE?</h3>
+
+<p>
+Physics, Chemistry and Mathematics are the
+main subjects for the engineering route.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<h3>Is JEE useful for engineering admission?</h3>
+
+<p>
+Yes. JEE is an important entrance examination
+route for undergraduate engineering admissions.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<h3>What is the difference between JEE Main and JEE Advanced?</h3>
+
+<p>
+They are different stages of the JEE system with
+different purposes and eligibility requirements.
+JEE Advanced is associated with IIT admissions
+for eligible candidates.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<h3>Can Class 12 students prepare for JEE?</h3>
+
+<p>
+Yes. Students can prepare during Class 11 and 12,
+subject to the applicable eligibility requirements.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<h3>Should I solve previous-year questions?</h3>
+
+<p>
+Yes. Previous-year questions are useful for
+understanding question patterns and improving
+problem-solving skills.
+</p>
+
+</div>
+
+
+</section>
+
+
+<!-- OFFICIAL -->
+
+<section class="content-section">
+
+<h2>🌐 Official Information</h2>
+
+<p>
+
+For current dates, eligibility, syllabus,
+application forms, examination instructions and
+admission rules, always use the official examination
+website and the latest official notification.
+
+</p>
+
+<a href="https://jeemain.nta.nic.in/"
+target="_blank"
+class="official-btn">
+
+JEE Main Official Website ↗
+
+</a>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<section class="content-section">
+
+<h2>📌 Important Note</h2>
+
+<p>
+
+The information on After12 is intended to help
+students understand the examination and plan their
+preparation. Examination dates, eligibility,
+fees, syllabus, attempts, pattern and admission
+rules may change.
+
+Always verify the latest information from the
+official examination authority before applying.
+
+</p>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+
+<a href="index.html"
+class="logo">
+
+After<span>12</span>
+
+</a>
+
+<p>
+Helping students make confident decisions
+after Class 12.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Explore</h4>
+
+<a href="courses.html">Courses</a>
+
+<a href="careers.html">Careers</a>
+
+<a href="colleges.html">Colleges</a>
+
+<a href="exams.html">Exams</a>
+
+</div>
+
+
+<div>
+
+<h4>Company</h4>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h4>Popular</h4>
+
+<a href="courses.html?stream=science">
+Science
+</a>
+
+<a href="courses.html?stream=commerce">
+Commerce
+</a>
+
+<a href="courses.html?stream=arts">
+Arts
+</a>
+
+</div>
+
+</footer>
+
+
+<div class="copyright">
+
+© 2026 After12 Education Guide
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

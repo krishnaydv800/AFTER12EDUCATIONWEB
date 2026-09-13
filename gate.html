@@ -29,37 +29,110 @@
 
         /* NAVBAR */
 
-        header {
-            background: #fff;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+       .navbar {
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            color: #2563eb;
-        }
+    height: 78px;
 
-        nav {
-            display: flex;
-            gap: 24px;
-        }
+    padding: 0 6%;
 
-        nav a {
-            font-weight: 600;
-            color: #333;
-        }
+    display: flex;
 
-        nav a:hover {
-            color: #2563eb;
-        }
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #fff;
+
+    border-bottom:
+        1px solid var(--line);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+.logo {
+
+    font-size: 29px;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+.logo span {
+
+    color: var(--primary);
+
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.navbar nav a {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #5c6575;
+
+    transition: .2s;
+
+}
+
+
+.navbar nav a:hover,
+.navbar nav a.active {
+
+    color: var(--primary);
+
+}
+
+
+.nav-contact {
+
+    border:
+        1px solid var(--primary);
+
+    color:
+        var(--primary) !important;
+
+    padding: 10px 17px;
+
+    border-radius: 10px;
+
+}
+
+
+.menu-btn {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    font-size: 26px;
+
+    cursor: pointer;
+
+}
 
 
         /* HERO */

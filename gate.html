@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GATE - After12 Education Guide</title>
-    <link rel="stylesheet" href="CSS/style.css">
 
     <style>
 
@@ -28,7 +27,41 @@
             color: inherit;
         }
 
-       
+        /* NAVBAR */
+
+        header {
+            background: #fff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 600;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+
         /* HERO */
 
         .hero {
@@ -261,27 +294,34 @@
 
 <body>
 
- <!-- Navbar -->
-    <header class="navbar">
-        <a href="index.html" class="logo">
-            After<span>12</span>
-        </a>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+<!-- NAVBAR -->
 
-        <nav id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="careers.html">Careers</a>
-            <a href="colleges.html">Colleges</a>
-            <a class="active" href="exams.html">Exams</a>
-            <a href="about.html">About</a>
-            <a href="contact.html" class="nav-contact">Contact</a>
-        </nav>
-    </header>
+<header>
 
+    <div class="logo">
+        After12
+    </div>
 
+    <nav>
 
+        <a href="index.html">Home</a>
+
+        <a href="courses.html">Courses</a>
+
+        <a href="careers.html">Careers</a>
+
+        <a href="colleges.html">Colleges</a>
+
+        <a href="exams.html">Exams</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
 
 
 
